@@ -1,0 +1,109 @@
+
+  <!-- Begin Main Wrapper -->
+  <div class="main-wrapper">
+    <!-- Begin Header -->
+    <div class="header-wrapper">
+      <div class="header">
+        <div class="header-left">
+          <h1 class="logo-text">
+            <a href="/" title="The Flatiron School">
+              <img src="/img/the-flatiron-school-logo-sm-black.png" class="logo">
+            </a>
+          </h1>
+        </div>
+        <div class="header-right">
+          <div class="menu-header-container">
+            <ul id="nav" class="nav">
+              <li class="menu-item">
+                <a href="http://flatironschool.com/index.html">Home</a>
+              </li>
+              <li>
+                <a href="program.html">The Program</a>
+                <ul class="sub-menu">
+                  <li><a href="http://flatironschool.com/program.html">Basics</a></li>
+                  <li><a href="http://flatironschool.com/curriculum.html">Curriculum</a></li>
+                  <li><a href="http://flatironschool.com/faculty.html">Faculty</a></li>
+                  <li><a href="http://flatironschool.com/speakers.html">Guest Speakers</a></li>
+                  <li><a href="http://flatironschool.com/faq.html">FAQ</a></li>
+                  <li><a href="http://prework.flatironschool.com">Our Prework</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">The School</a>
+
+                <ul class="sub-menu">
+                  <li><a href="http://flatironschool.com/events.html">Events</a></li>
+                  <li><a href="http://flatironschool.com/contact.html">Contact</a></li>
+                  <li><a href="http://students.flatironschool.com/">Students</a></li>
+                </ul>
+
+              </li>
+              <li><a href="http://info.flatironschool.com/summer-2013-application"><font color="#26c4ff">Apply</font></a>
+              </li>
+              <li>
+                <a href="http://flatironschool.com/employers.html">Employers</a>
+              </li>
+              <li>
+                <a href="http://blog.flatironschool.com/">Blog</a>
+              </li>
+              <li><a href="http://highschool.flatironschool.com/" target="_blank">High School</a></li>
+            </ul>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+
+      <div class="link-subs">
+        <span>
+          <img src="/img/student-icons/swiss-army-knife.png" style="width: 16px;" /> <%=@student[0][:name]%></span>
+
+        <ul>
+          <li><a href="#scroll-about">About</a></li>
+          <li>|</li>
+          <li><a href="#scroll-coder-cred">Coder Cred</a></li>
+          <li>|</li>
+          <li><a href="#scroll-recently">Recently</a></li>
+          <li>|</li>
+          <li><a href="#scroll-favorites">Favorites</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- End Main Wrapper -->
+
+        <!-- Begin Content -->
+    <div class="container">
+
+      <!-- Begin Splash Image -->
+      <div class="top-page-title">
+        <div>
+          <img src="/img/profile_desmond.jpg" class="student_pic">
+        </div>
+      </div>
+      <! -- End Splash Image -->
+
+      <!-- Begin Title Content -->
+      <div class="page-title">
+        <h4 class="ib_main_header"><%=@student[0][:name]%></h4>
+        <div class="social-icons">
+          <a href="#{<%=@student[0][:twitter]%>}"><i class="icon-twitter ib-social-icons"></i></a>
+          <a href="#{<%=@student[0][:linkedin]%>}"><i class="icon-linkedin-sign ib-social-icons"></i></a>
+          <a href="https://github.com/<%=@student[0][:name]%>"><i class="icon-github ib-social-icons"></i></a>
+          <a href="<%=@student[0][:url]%>"><i class="icon-rss ib-social-icons"></i></a>
+        </div>
+
+        <div class="section section-testimonials-curriculum quote-div">
+          <div id="testimonial-slider" class="flexslider">
+            <ul class="testimonials slides">
+              <li id="text-7" class="widget_text" style="list-style: none; display: list-item;">
+                <div class="textwidget">
+                  <h3><%=@student[0][:quote]%></h3>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Title Content -->
+

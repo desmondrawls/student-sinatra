@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+  <meta charset="UTF-8" />
+  <meta name="viewport" content ="width=device-width, minimum-scale=1.0, initial-scale=1.0">
+
+  <title>The Flatiron School</title>
+
+  <link rel='stylesheet' href="/css/style.css" type='text/css' media='all' />
+  <link rel='stylesheet' href="/css/media-queries.css" type='text/css' media='all' />
+  <link rel='stylesheet' href="/css/flexslider.css" type='text/css' media='screen' />
+  <link rel='stylesheet' href="/css/font-awesome.css" type='text/css' media='screen' />
+  <link rel='stylesheet' id='google_merriweather-css'  href='http://fonts.googleapis.com/css?family=Merriweather:400,700&ver=3.5' type='text/css' media='all' />
+
+  <script type='text/javascript' src="/js/jquery.js"></script>
+  <script type='text/javascript' src="/js/chirp.min.js"></script>
+  <script type='text/javascript' src="/js/smooth-scroll.js"></script>
+
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+</head>
+
+<body id="scroll-header" class="home page students">
+<%= yield %>
+
+ <!-- Begin Footer -->
+  <div class="footer">
+    <div class="footer-text">
+      <div class="footer-text-left">
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="index.html">
+                <i class="icon-home icon-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/okokillgo">
+                <i class="icon-twitter icon-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/desmond.rawls">
+                <i class="icon-facebook-sign icon-2x"></i>
+              </a>
+            </li>
+<!--             <li>
+              <a href="http://instagram.com/">
+                <i class="icon-camera-retro icon-2x"></i>
+              </a>
+            </li> -->
+            <li>
+              <a href="http://www.linkedin.com/pub/desmond-rawls/20/262/398">
+                <i class="icon-linkedin-sign icon-2x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/desmondrawls">
+                <i class="icon-github-alt icon-2x"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-text-right">
+        <div class="copyright">
+          &copy; 2013. The Flatiron School.  All Your Rights Are Belong To Us.
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!-- End Footer -->
+
+  <script type='text/javascript'>var custom_js_vars={"flexslider_auto":"enabled"};</script>
+  <script type='text/javascript' src="../js/custom.js"></script>
+  <script type='text/javascript' src="../js/jquery.flexslider.js"></script>
+  <script type='text/javascript' src="../js/jquery.tabs.min.js"></script>
+  <script type='text/javascript' src="../js/jquery.fitvids.js"></script>
+  <script type='text/javascript' src="../js/jquery.mobilemenu.js"></script>
+
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-33578770-1']);
+    _gaq.push(['_setDomainName', 'flatironschool.com']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+  <!-- Start of Async HubSpot Analytics Code -->
+  <script type="text/javascript">
+    (function(d,s,i,r) {
+
+      if (d.getElementById(i)){return;}
+
+      var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+
+      n.id=i;n.src='//js.hubspot.com/analytics/'+(Math.ceil(new Date()/r)*r)+'/69751.js';
+
+      e.parentNode.insertBefore(n, e);
+
+    })(document,"script","hs-analytics",300000);
+
+    document.getElementById('#background').scrollIntoView();
+  </script>
+  <!-- End of Async HubSpot Analytics Code -->
+
+  <script type="text/javascript">
+    jQuery('a').smoothScroll({offset: -152, speed: 1000});
+    jQuery('.go-to-link a').smoothScroll();
+  </script>
+</body>
+</html>
+

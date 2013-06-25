@@ -1,6 +1,6 @@
 require 'nokogiri'
 require 'open-uri'
-require 'SQLite3'
+require 'sqlite3'
 
 class Student
   attr_reader :student_page, :url, :student_hash
